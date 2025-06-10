@@ -236,9 +236,6 @@
   .inline-block {
     display: inline-block;
   }
-  .table {
-    display: table;
-  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
@@ -434,6 +431,7 @@
 }
 .heading-size {
   font-size: 56px;
+  min-height: 112px;
 }
 .w-desktop-1440 {
   width: 100%;
@@ -503,7 +501,12 @@
     margin-right: auto;
   }
 }
-.media-heading {
+.media-heading-01 {
+  @media (max-width: 980px) {
+    min-height: unset;
+  }
+}
+.media-heading-02 {
   @media (max-width: 500px) {
     font-size: 45px;
   }

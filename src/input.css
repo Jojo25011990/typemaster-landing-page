@@ -14,6 +14,7 @@
 /* Heading Size */
 .heading-size {
 	font-size: 56px;
+	min-height: 112px;
 }
 /* End of Heading Size */
 
@@ -117,7 +118,13 @@
 }
 
 /* Hero Section - Heading, Paragraph and Buttons */
-.media-heading {
+.media-heading-01 {
+	@media (max-width: 980px) {
+		min-height: unset;
+	}
+}
+
+.media-heading-02 {
 	@media (max-width: 500px) {
 		font-size: 45px;
 	}
